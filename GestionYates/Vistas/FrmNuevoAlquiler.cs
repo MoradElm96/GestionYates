@@ -15,6 +15,15 @@ namespace GestionYates.Vistas
         public FrmNuevoAlquiler()
         {
             InitializeComponent();
+            cargarDatos();
         }
+
+        public void cargarDatos()
+        {
+            string[] clientes = new [] { "Naviera SA", "Kili", "Naviera Ibiza", "Naviera Bilbao", "Barcos Sagunto", "Recreativos Ferrol", "Santander", "Vigo Inc.", "Ferrol Barcos" };
+            lstClientes.DataSource = clientes;
+        }
+
+
     }
 }
