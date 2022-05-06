@@ -16,7 +16,14 @@ namespace GestionYates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBienvenida());
+            //ojo aqui, instanciar el formulario fuera del run
+            FrmBienvenida frmBienvenida = new FrmBienvenida();
+            frmBienvenida.Show();
+
+            Application.Run();
+
+
+
         }
     }
 }
