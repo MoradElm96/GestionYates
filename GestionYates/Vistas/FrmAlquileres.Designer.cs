@@ -54,27 +54,29 @@ namespace GestionYates.Vistas
             // btnAlquilerMasLargo
             // 
             this.btnAlquilerMasLargo.Location = new System.Drawing.Point(57, 332);
-            this.btnAlquilerMasLargo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlquilerMasLargo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlquilerMasLargo.Name = "btnAlquilerMasLargo";
             this.btnAlquilerMasLargo.Size = new System.Drawing.Size(137, 26);
             this.btnAlquilerMasLargo.TabIndex = 1;
             this.btnAlquilerMasLargo.Text = "ALQUILER MAS LARGO";
             this.btnAlquilerMasLargo.UseVisualStyleBackColor = true;
+            this.btnAlquilerMasLargo.Click += new System.EventHandler(this.btnAlquilerMasLargo_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(216, 332);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(137, 26);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnVerDatosYate
             // 
             this.btnVerDatosYate.Location = new System.Drawing.Point(374, 332);
-            this.btnVerDatosYate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVerDatosYate.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerDatosYate.Name = "btnVerDatosYate";
             this.btnVerDatosYate.Size = new System.Drawing.Size(137, 26);
             this.btnVerDatosYate.TabIndex = 3;
@@ -85,7 +87,7 @@ namespace GestionYates.Vistas
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(541, 332);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(137, 26);
             this.btnCancelar.TabIndex = 4;
@@ -106,10 +108,11 @@ namespace GestionYates.Vistas
             // txtPuerto
             // 
             this.txtPuerto.Location = new System.Drawing.Point(263, 77);
-            this.txtPuerto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPuerto.Margin = new System.Windows.Forms.Padding(2);
             this.txtPuerto.Name = "txtPuerto";
             this.txtPuerto.Size = new System.Drawing.Size(191, 20);
             this.txtPuerto.TabIndex = 6;
+            this.txtPuerto.TextChanged += new System.EventHandler(this.txtPuerto_TextChanged);
             // 
             // dataGridView1
             // 
@@ -132,7 +135,7 @@ namespace GestionYates.Vistas
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAlquilerMasLargo);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAlquileres";
             this.Text = "FrmAlquileres";
             this.Load += new System.EventHandler(this.FrmAlquileres_Load);

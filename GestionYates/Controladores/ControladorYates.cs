@@ -27,7 +27,13 @@ namespace GestionYates.Controladores
             return listaYates;
         }
 
-       
+        public static Yate recuperarYate(string codigoYate)
+        {
+            //encontrar el yate por codigo de yate
+            List<Yate> lista = recuperarYates();
+            return lista.Find(ele => ele.Codigo == codigoYate);
+        }
+
 
 
 
